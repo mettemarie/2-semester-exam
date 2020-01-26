@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <title>Ægget & Skægget - Folkekøkken</title>
+    <link rel="icon" href="img/smiley.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <script>
+        function openMenu() {
+            document.getElementById("menu-responsive").classList.add("open");
+        }
+
+        function closeMenu() {
+            document.getElementById("menu-responsive").classList.remove("open");
+        }
+
+    </script>
+
+</head>
+<body id="body-home">
+<!------------Phone & Tablet Navigation------------>
+<nav id="menu-responsive">
+    <div id="top-menu">
+        <a href="#" id="close" onclick="closeMenu()">
+         <i class="fas fa-times"></i>
+        </a>
+        <a href="#"><img src="img/shopping-icon.png" alt="shopping icon"></a>
+    </div>
+    <a class="menu-items menu-selected" href="index.html">Home</a>
+    <a class="menu-items" href="pages/lokation.html">Lokation</a>
+    <a class="menu-items" href="#">Menu</a>
+    <a class="menu-items" href="#">Hvem er vi</a>
+    <a class="menu-items" href="#">Kontakt</a>
+    <span class="icons">
+        <a href="#"><img src="img/facebook-icon.png" alt="facebook icon"></a>
+        <a href="#"><img src="img/instagram-icon.png" alt="instagram icon"></a>
+    </span>
+</nav>
+
+<!-------------------Header-------------------->
+<header>
+    <div id="header">
+    <div id="burger-box">
+        <a href="#" id="burger" onclick="openMenu()">
+            <i class="fas fa-2x fa-bars"></i>
+        </a>
+    
+    </div>
+    <div id="short-header">
+            <a href="#"><p>Er du også sulten? <br/><b>Bestil vores mad her >>></b></p></a>
+    </div>
+    <div id="wide-header">
+            <a href="#"><p>Er du også sulten? <b>Bestil vores mad her >>></b></p></a>
+    </div>
+    </div>
+</header>
+
+    <main>
+        <!------------Desktop Navigation------------>
+
+        <nav id="menu-desktop">
+            <img src="img/smiley.png" alt="smiley"> 
+            <ul>
+                <li><a class="menu-items-desktop menu-selected" href="index.html">Home</a></li>
+                <li><a class="menu-items-desktop" href="pages/lokation.html">Lokation</a></li>
+                <li><a class="menu-items-desktop" href="#">Menu</a></li>
+                <li><a class="menu-items-desktop" href="#">Hvem er vi</a></li>
+                <li><a class="menu-items-desktop" href="#">Kontakt</a></li>
+                
+            </ul>
+        </nav>
+
+
+        <!-------------------Home------------------->
+        <article id="home">
+            <section id="shopping-cart">
+                <a href="#">
+                    <img src="img/shopping-icon.png" alt="shopping cart icon">
+                </a>
+            </section>
+        <section id="smiley">
+            <img src="img/smiley.png" alt="smiley">
+        </section>
+
+        <section id="aegget">
+            <div id="box1">
+                <h1>Ægget & <br> Skægget</h1>
+              </div>
+              <div id="box2">
+                    <h2>Folkekøkken</h2>
+                  </div>
+        </section>
+
+        <section id="sociale-medier">
+            <a href="#">
+                <img src="img/facebook-icon.png" alt="facebook icon">
+            </a>
+            <a href="#">
+                <img src="img/instagram-icon.png" alt="instagram icon">
+            </a>
+        </section>
+
+
+    </article>
+</main>
+
+
+</body>
+    
+</html>

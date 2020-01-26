@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <title>Ægget & Skægget - Folkekøkken</title>
+    <link rel="icon" href="../img/smiley.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <script src="../popup.js"></script>
+    
+
+    <script>
+        function openMenu() {
+            document.getElementById("menu-responsive").classList.add("open");
+        }
+
+        function closeMenu() {
+            document.getElementById("menu-responsive").classList.remove("open");
+        }
+
+    </script>
+
+</head>
+<body id="body-lokation">
+<!------------Phone & Tablet Navigation------------>
+<nav id="menu-responsive">
+    <div id="top-menu">
+        <a href="#" id="close" onclick="closeMenu()">
+         <i class="fas fa-times"></i>
+        </a>
+        <a href="#"><img src="../img/shopping-icon.png" alt="shopping icon"></a>
+    </div>
+    <a class="menu-items" href="../index.html">Home</a>
+    <a class="menu-items menu-selected" href="lokation.html">Lokation</a>
+    <a class="menu-items" href="#">Menu</a>
+    <a class="menu-items" href="#">Hvem er vi</a>
+    <a class="menu-items" href="#">Kontakt</a>
+    <span class="icons">
+        <a href="#"><img src="../img/facebook-icon.png" alt="facebook icon"></a>
+        <a href="#"><img src="../img/instagram-icon.png" alt="instagram icon"></a>
+    </span>
+</nav>
+
+<!-------------------Header-------------------->
+<header>
+    <div id="header">
+    <div id="burger-box">
+        <a href="#" id="burger" onclick="openMenu()">
+            <i class="fas fa-2x fa-bars"></i>
+        </a>
+    
+    </div>
+    <div id="short-header">
+            <a href="#"><p>Er du også sulten? <br/><b>Bestil vores mad her >>></b></p></a>
+    </div>
+    <div id="wide-header">
+            <a href="#"><p>Er du også sulten? <b>Bestil vores mad her >>></b></p></a>
+    </div>
+    </div>
+</header>
+
+    <main>
+        <!------------Desktop Navigation------------>
+
+        <nav id="menu-desktop">
+            <img src="../img/logo.png" alt="logo"> 
+            <ul>
+                <li><a class="menu-items-desktop" href="../index.html">Home</a></li>
+                <li><a class="menu-items-desktop menu-selected" href="lokation.html">Lokation</a></li>
+                <li><a class="menu-items-desktop" href="#">Menu</a></li>
+                <li><a class="menu-items-desktop" href="#">Hvem er vi</a></li>
+                <li><a class="menu-items-desktop" href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        <!-------------------Shopping cart------------------->
+        <article id="home">
+            <section id="shopping-cart">
+                <a href="#">
+                    <img src="../img/shopping-icon.png" alt="shopping cart icon">
+                </a>
+            </section>
+
+        <!--------------------Lokation-side-------------------->
+
+        <section id="lokation-sektion">
+
+            <h1>Lokation</h1>
+            <img id="smiley-lokation" src="../img/smiley.png" alt="smiley">
+            
+            <div id="wrapper-desktop">
+                
+                <div class="kasse">
+                    <h2 class="adresse">Lyshøjen 1,<br>8520 Lystrup</h2>
+                     <p class="dage">Mandag - Lørdag</p>
+                    <p class="klokken">11:00 - 20:00</p>
+
+                     <div class="kort-sektion">
+                        <button class="popup-button" id="lyshojen-btn">
+                         <img class="kort-img" src="../img/maps-and-flags.png" alt="kort"> 
+                             <p class="kort-link">Kort</p>
+                        </button>
+                </div>
+            </div>
+
+            <img id="dots" src="../img/dots.png" alt="dots">
+           
+           
+            <div class="kasse">
+            <h2 class="adresse">Skovfaldet 2,<br>8200 Aarhus N</h2>
+            <p class="dage">Mandag - Lørdag</p>
+            <p class="klokken">11:00 - 20:00</p>
+            <div class="kort-sektion">
+                <button class="popup-button" id="skovfaldet-btn" >
+                    <img class="kort-img" src="../img/maps-and-flags.png" alt="kort"> 
+                    <p class="kort-link">Kort</p>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!------------------responsive lokation ---------------->
+
+        <div id="wrapper-responsive">
+            <div class="kasse">
+        <h2 class="adresse">Lyshøjen 1,<br>8520 Lystrup</h2>
+        <p class="dage">Mandag - Lørdag</p>
+        <p class="klokken">11:00 - 20:00</p>
+        <div class="kort-sektion">
+            <a href="https://goo.gl/maps/HvsByDhTWFtT5spr7" target="_blank" class="popup-button">
+                <img class="kort-img" src="../img/maps-and-flags.png" alt="kort"> 
+                <p class="kort-link">Kort</p>
+            </a>
+        </div>
+    </div>
+
+        <img id="dots" src="../img/dots.png" alt="dots">
+       
+       
+        <div class="kasse">
+        <h2 class="adresse">Skovfaldet 2,<br>8200 Aarhus N</h2>
+        <p class="dage">Mandag - Lørdag</p>
+        <p class="klokken">11:00 - 20:00</p>
+        <div class="kort-sektion">
+            <a href="https://goo.gl/maps/JZkGCbj4sdXHeCsX6" target="_blank" class="popup-button">
+                <img class="kort-img" src="../img/maps-and-flags.png" alt="kort"> 
+                <p class="kort-link">Kort</p>
+            </a>
+        </div>
+        </div>
+    </div>
+        </section>
+
+       
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="lyshojen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2217.851781627855!2d10.235952816429586!3d56.228797162646146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3dd88e063755%3A0x47e59a939ec5a02a!2sLysh%C3%B8jen%201%2C%208520%20Lystrup!5e0!3m2!1sen!2sdk!4v1579882988459!5m2!1sen!2sdk" width="800" height="600" frameborder="1" style="border:10px;" allowfullscreen=""></iframe>
+            <iframe id="skovfaldet" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2220.834657814144!2d10.215081215947029!3d56.17725098066891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fb114ce648b%3A0x29642288f9193e4!2sSkovfaldet%202%2C%208200%20Aarhus!5e0!3m2!1sen!2sdk!4v1579895449945!5m2!1sen!2sdk" width="800" height="600" frameborder="1" style="border:0;" allowfullscreen=""></iframe>  
+        </div>
+        
+        </div>
+
+
+        <!-------------------Sociale Medier------------------->
+       
+        <section id="sociale-medier">
+            <a href="#">
+                <img src="../img/facebook-icon.png" alt="facebook icon">
+            </a>
+            <a href="#">
+                <img src="../img/instagram-icon.png" alt="instagram icon">
+            </a>
+        </section>
+
+    </article>
+</main>
+</body>
+<script src="../popup.js"></script>
+</html>
